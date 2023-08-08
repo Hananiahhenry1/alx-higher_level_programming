@@ -3,8 +3,7 @@ import random
 number = random.randint(-10000, 10000)
 # YOUR CODE HERE
 if number < 0:
-    mod = number * -1
-    mod = mod % 10
+    mod = ((number * -1) % 10) * -1
 else:
     mod = number % 10
 if mod > 5:
